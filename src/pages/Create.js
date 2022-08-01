@@ -1,5 +1,6 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
 
 export default function Create() {
   return (
@@ -12,6 +13,10 @@ export default function Create() {
       >
         Create a new node
       </Typography>
+      <Button type="submit">submit</Button>
+      <Button type="submit" color="secondary" variant="outlined">
+        submit
+      </Button>
     </div>
   );
 }
