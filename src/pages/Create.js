@@ -1,15 +1,15 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-
+import AcUnitIcon from "@mui/icons-material/AcUnit";
 //the same below 2 importing method, also for other components like Typography
 //for example, it is that the way wihout curely braces has a little bit better performance.
 //import {ButtonGroup} from "@material-ui/core";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
+import container from "@material-ui/core/container";
 
 export default function Create() {
   return (
-    <div>
+    <container>
       <Typography
         variant="h6"
         component="h2"
@@ -18,17 +18,6 @@ export default function Create() {
       >
         Create a new node
       </Typography>
-      <Button type="submit">submit</Button>
-      <Button type="submit" color="secondary" variant="outlined">
-        submit
-      </Button>
-
-      {/* <ButtonGroup color="secondary" variant="contained">
-        <Button>One</Button>
-        <Button>Two</Button>
-        <Button>Three</Button>
-      </ButtonGroup> */}
-
       <Button
         onClick={() => console.log("hello")}
         type="submit"
@@ -37,6 +26,15 @@ export default function Create() {
       >
         Submit
       </Button>
-    </div>
+      <br />
+      {/* icons */}
+      <AcUnitIcon style={{ color: "red" }} />
+      <AcUnitIcon color="secondary" fontSize="large" />
+      <AcUnitIcon color="primary" fontSize="small" />
+      <AcUnitIcon />
+      <AcUnitIcon color="action" />
+      <AcUnitIcon color="error" />
+      <AcUnitIcon color="disabled" />
+    </container>
   );
 }
