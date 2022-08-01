@@ -23,11 +23,20 @@ export default function Create() {
         submit
       </Button>
 
-      <ButtonGroup color="secondary" variant="contained">
+      {/* <ButtonGroup color="secondary" variant="contained">
         <Button>One</Button>
         <Button>Two</Button>
         <Button>Three</Button>
-      </ButtonGroup>
+      </ButtonGroup> */}
+
+      <Button
+        onClick={() => console.log("hello")}
+        type="submit"
+        color="secondary"
+        variant="contained"
+      >
+        Submit
+      </Button>
     </div>
   );
 }
