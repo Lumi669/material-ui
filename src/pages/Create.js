@@ -5,8 +5,15 @@ import Button from "@material-ui/core/Button";
 //for example, it is that the way wihout curely braces has a little bit better performance.
 //import {ButtonGroup} from "@material-ui/core";
 import container from "@material-ui/core/container";
-import SendIcon from "@mui/icons-material/Send";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles({
+  btn: {
+    fontSize: 60,
+    backgroundColor: "violet",
+  },
+});
 
 export default function Create() {
   return (
